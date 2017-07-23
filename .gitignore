@@ -1,0 +1,15 @@
+Chess/.idea/
+Chess/target/
+Chess/src/main/client/node_modules/
+Chess/src/main/client/bower_components/
+Chess/src/main/client/.tmp/
+Chess/src/main/client/dist/
+Chess/src/main/test-output/
+Chess/src/main/.idea/
+Chess/src/main/*.iml
+Chess/src/main/java/target
+Chess/src/main/.settings
+Chess/src/main/.project
+Chess/src/main/.sonar
+
+
