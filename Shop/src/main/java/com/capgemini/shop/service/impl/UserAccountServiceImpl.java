@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.capgemini.shop.dao.UserAccountDao;
 import com.capgemini.shop.dataaccess.entities.UserAccountEntity;
+import com.capgemini.shop.service.ProductService;
 import com.capgemini.shop.service.UserAccountService;
 import com.capgemini.shop.service.exception.UnknownObjectRequestException;
 
@@ -20,6 +21,9 @@ public class UserAccountServiceImpl implements UserAccountService {
 
 	@Autowired
 	private UserAccountDao userAccountDao;
+
+	@Autowired
+	private ProductService pruductService;
 
 	@Override
 	public UserAccountEntity getUser(long id) throws UnknownObjectRequestException {

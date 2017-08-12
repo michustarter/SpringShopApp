@@ -1,3 +1,4 @@
+
 insert into USER_ACCOUNT(login, name, surname, discount) values('zbyniu', 'zbigniew', 'stasik', 10);
 insert into USER_ACCOUNT(login, name, surname, discount) values('kazik', 'Kazimierz', 'Gorski', 20);
 insert into USER_ACCOUNT(login, name, surname, discount) values('kazach', 'Lukasz', 'Kek', 30);
