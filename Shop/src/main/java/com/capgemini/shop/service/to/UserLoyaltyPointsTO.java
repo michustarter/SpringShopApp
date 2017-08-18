@@ -3,9 +3,9 @@ package com.capgemini.shop.service.to;
 public class UserLoyaltyPointsTO {
 
 	private String login;
-	private long loyaltyPoints;
+	private double loyaltyPoints;
 
-	public UserLoyaltyPointsTO(String login, long loyaltyPoints) {
+	public UserLoyaltyPointsTO(String login, double loyaltyPoints) {
 		this.login = login;
 		this.loyaltyPoints = loyaltyPoints;
 	}
@@ -18,7 +18,7 @@ public class UserLoyaltyPointsTO {
 		this.login = login;
 	}
 
-	public long getLoyaltyPoints() {
+	public double getLoyaltyPoints() {
 		return loyaltyPoints;
 	}
 
