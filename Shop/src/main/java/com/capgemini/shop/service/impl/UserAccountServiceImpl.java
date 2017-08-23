@@ -35,18 +35,21 @@ public class UserAccountServiceImpl implements UserAccountService {
 		return userAccountDao.getByLogin(login);
 	}
 
+	@Transactional(readOnly = false)
 	@Override
 	public void deleteUser(long id) {
 		userAccountDao.delete(id);
 
 	}
 
+	@Transactional(readOnly = false)
 	@Override
 	public UserAccountEntity createUser(UserAccountEntity userAccountEntity) {
 
 		return userAccountDao.save(userAccountEntity);
 	}
 
+	@Transactional(readOnly = false)
 	@Override
 	public UserAccountEntity updateUser(UserAccountEntity userAccountEntity) {
 		return userAccountDao.update(userAccountEntity);

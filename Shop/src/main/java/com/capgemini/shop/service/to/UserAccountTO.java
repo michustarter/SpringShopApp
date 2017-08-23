@@ -59,4 +59,13 @@ public class UserAccountTO {
 		this.discount = discount;
 	}
 
+	public UserAccountTO(String login, String name, String surname, int discount, long id) {
+		super();
+		this.login = login;
+		this.name = name;
+		this.surname = surname;
+		this.discount = discount;
+		this.id = id;
+	}
+
 }

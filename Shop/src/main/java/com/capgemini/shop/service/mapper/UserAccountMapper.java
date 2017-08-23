@@ -11,7 +11,7 @@ public class UserAccountMapper {
 	public static UserAccountTO map(UserAccountEntity userAccountEntity) {
 		if (userAccountEntity != null) {
 			UserAccountTO userAccountTO = new UserAccountTO(userAccountEntity.getLogin(), userAccountEntity.getName(),
-					userAccountEntity.getSurname(), userAccountEntity.getDiscount());
+					userAccountEntity.getSurname(), userAccountEntity.getDiscount(), userAccountEntity.getId());
 
 			return userAccountTO;
 		}
@@ -25,6 +25,9 @@ public class UserAccountMapper {
 			userAccountEntity.setLogin(userAccountTO.getLogin());
 			userAccountEntity.setName(userAccountTO.getName());
 			userAccountEntity.setSurname(userAccountTO.getSurname());
+			if (userAccountTO.getId() != 0) {
+				userAccountEntity.setId(userAccountTO.getId());
+			}
 			return userAccountEntity;
 		}
 		return null;
